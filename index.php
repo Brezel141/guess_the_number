@@ -61,14 +61,14 @@ if (isset($_POST["send"])) {
         }
         if ($showform == true) { ?>
 
-        <form action="randnum.php" method="POST">
+        <form action="index.php" method="POST">
             <input type="text" name="zahl" placeholder="Enter a number" value="<?php echo $zahl; ?>">
             <input type="submit" name="send" value="Submit">
             <input type="hidden" name="counter" value="<?php echo $counter; ?>">
         </form>
 
         <?php } else { ?>
-            <a href="randnum.php">Try Again!</a>
+            <a href="index.php">Try Again!</a>
         <?php } ?>
     
     </div>
